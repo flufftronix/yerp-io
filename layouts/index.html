@@ -1,0 +1,66 @@
+{{ define "main" }}
+<section class="section container-fluid mt-n3 pb-3">
+  <div class="row justify-content-center">
+    <div class="col-lg-12 text-center">
+      <h1 class="mt-0">{{ .Title }}</h1>
+    </div>
+    <div class="col-lg-9 col-xl-8 text-center">
+      <p class="lead">{{ .Params.lead | safeHTML }}</p>
+
+
+      <h2 class="h4">Pilot testing soon! Get updates via Email:</h2>
+      {{ partial "main/subscribe.html" . }}
+
+      <!--<a class="btn btn-primary btn-lg px-4 mb-2" href="{{ "docs/prologue/introduction/" | absURL }}" role="button">Learn More</a> -->
+
+      <p class="meta">Open-source Apache Licensed. <a href="https://github.com/flufftronix/yerp">YERP v{{ .Site.Data.doks.version }}</a></p>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "sidebar-prefooter" }}
+<section class="section section-sm">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-5">
+        <h2 class="h4">Aiming For More Safety, Dignity, and Privacy</h2>
+        <p>YERP! seeks to lower the barrier to bathroom safety monitoring especially in high risk areas, where widespread lack of sanitation has corresponded with communicable disease outbreaks.</p>
+      </div>
+      <div class="col-lg-5">
+        <h2 class="h4">Open Source Strong</h2>
+        <p>Built on top of <a href="https://home-assistant.io">Home Assistant</a>, a tried and tested platform with sizable user and development communities.</p>
+      </div>      
+      <div class="col-lg-5">
+        <h2 class="h4">False Positive Resistant</h2>
+        <p>Configured out of the box to allow for multiple alerts, to both end users and service providers, before the alarm stage is reached.
+        </p>
+      </div>
+    </div>
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-5">
+        <h2 class="h4">Privacy Protecting</h2>
+        <p>YERP! uses no audio or video recording devices, and captures no identifying information. Cloud service integration is available, but not required: you control your data!</p>
+      </div>
+      <div class="col-lg-5">
+        <h2 class="h4">Really, Really Modular</h2>
+        <p>YERP! is made around building blocks, rather than a rigid system. You can even allow end users the autonomy to only engage the monitoring system via button push.</p>
+      </div>
+      <div class="col-lg-5">
+        <h2 class="h4">Suited For A Variety of Budgets</h2>
+        <p>YERP! is built around affordable consumer smart home hardware and free software. Step by step tutorials are available. Consulting, installation, and maintenance services will also be offered.</p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "sidebar-footer" }}
+<section class="section section-sm container-fluid">
+  <div class="row justify-content-center text-center">
+    <div class="col-lg-9">
+      {{- .Content -}}
+    </div>
+  </div>
+</section>
+{{ end }}
