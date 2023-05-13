@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ .Site.Params.languageTag | default "en-US" }}" data-dark-mode="">
+<html lang="{{ .Site.Params.languageTag | default "en-US" }}" data-dark-mode=>
   {{ partial "head/head.html" . }}
   {{ if eq .Kind "home" -}}
     {{ .Scratch.Set "class" "home" -}}
