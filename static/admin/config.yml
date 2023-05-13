@@ -9,8 +9,7 @@ collections:
     label: 'Blog'
     folder: 'content/en/blog'
     create: true
-    nested:
-      depth: 10 # max depth to show in the collection tree
+    path: '{{slug}}/index'
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: "Draft", name: "draft", widget: "boolean", default: true }      
