@@ -10,7 +10,7 @@ collections:
     label: 'Blog'
     folder: 'content/en/blog'
     create: true
-    path: '{{slug}}/index.md'
+    path: '{{slug}}/index'
     
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
