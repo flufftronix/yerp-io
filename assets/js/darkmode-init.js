@@ -19,3 +19,6 @@ if (localMode === 'dark') {
   document.documentElement.setAttribute('data-dark-mode', '');
 
 }
+
+localStorage.setItem('theme', 'dark');
+document.documentElement.setAttribute('data-dark-mode', '');
