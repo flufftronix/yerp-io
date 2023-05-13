@@ -10,6 +10,7 @@ collections:
     folder: 'content/en/blog'
     create: true
     path: '{{slug}}/index'
+    slug: "{{slug}}"
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: "Draft", name: "draft", widget: "boolean", default: true }      
